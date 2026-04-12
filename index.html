@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LAST SIGNAL</title>
+  <link rel="stylesheet" href="create.css">
+  <!-- if you're reading this, the system already noticed you -->
+
+</head>
+<body>
+
+<div class="container">
+  <h1>LAST SIGNAL INTERFACE</h1>
+
+  <div class="status">
+    <p>📶 WiFi: <span id="wifi">CONNECTED</span></p>
+    <p>🔋 Battery: <span id="battery">100%</span></p>
+    <p>📡 Radio: <span id="radio">ACTIVE</span></p>
+  </div>
+
+  <div id="log">
+    <p>> System initialized...</p>
+    <p class="warning">⚠ FINAL TRANSMISSION IN PROGRESS ⚠</p>
+  </div>
+
+  <button id="dontClick">DO NOT CLICK</button>
+
+  <!-- click anywhere else and the system might save you -->
+
+   
+</div>
+
+<audio id="bgAudio" loop>
+  <source src="ambient.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="heartbeat" loop>
+  <source src="heartbeat.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="scream">
+  <source src="scream.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
